@@ -30,6 +30,14 @@ public class Utils {
         return checkConfigValue(properties, key, defaultValue, null);
     }
 
+    public static String getStringConfigVaule(Properties properties, String key, String defaultValue){
+        return checkConfigValue(properties, key, defaultValue)?properties.getProperty(key):null;
+    }
+
+    public static String getStringConfigVaule(Properties properties, String key){
+        return getStringConfigVaule(properties, key, null);
+    }
+
     public static boolean checkConfigValue(Properties properties, String key, String defaultValue, String errorMessage) {
         String value = System.getProperty(key);
         if (value == null || value.equals("")) {

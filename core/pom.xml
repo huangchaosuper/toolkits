@@ -3,7 +3,7 @@
     <parent>
         <artifactId>toolkits</artifactId>
         <groupId>cn.huangchaosuper.toolkits</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,4 +16,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+    </dependencies>
 </project>
