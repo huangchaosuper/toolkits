@@ -38,6 +38,10 @@ public class Utils {
         return getStringConfigVaule(properties, key, null);
     }
 
+    public static Boolean getBooleanConfigVaule(Properties properties, String key){
+        return Boolean.valueOf(getStringConfigVaule(properties, key, String.valueOf(false)));
+    }
+
     public static boolean checkConfigValue(Properties properties, String key, String defaultValue, String errorMessage) {
         String value = System.getProperty(key);
         if (value == null || value.equals("")) {
